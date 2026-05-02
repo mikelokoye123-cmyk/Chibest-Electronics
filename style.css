@@ -706,7 +706,7 @@ footer {
     }
 
     .logo img {
-        height: 60px !important; /* Slightly smaller logo on mobile */
+        height: 60px !important;
     }
 
     .mobile-menu-btn {
@@ -715,17 +715,97 @@ footer {
     }
 
     .section {
-        padding: 50px 0; /* More compact sections on mobile */
+        padding: 50px 0;
     }
 
     .hero h1 {
-        font-size: 36px; /* Optimized heading for small screens */
+        font-size: 32px;
+        margin-bottom: 15px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .filter-btns {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 15px;
+        margin-bottom: 25px;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .filter-btns::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex-shrink: 0;
+        white-space: nowrap;
     }
 
     .products-grid {
-        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Better fit for smaller phones */
-        gap: 20px;
+        grid-template-columns: repeat(2, 1fr); /* Premium 2-column mobile grid */
+        gap: 15px;
+        padding: 0 5px;
     }
+
+    .product-img {
+        height: 180px;
+    }
+
+    .product-info {
+        padding: 15px;
+    }
+
+    .product-name {
+        font-size: 16px;
+        height: 40px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .product-price {
+        font-size: 18px;
+    }
+
+    .order-btn {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .about-img {
+        margin-bottom: 30px;
+    }
+
+    .contact-container {
+        gap: 30px;
+    }
+
+    .footer-content {
+        gap: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .products-grid {
+        gap: 10px;
+    }
+    
+    .product-img {
+        height: 150px;
+    }
+    
+    .whatsapp-float, .chat-toggle {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .whatsapp-float { bottom: 20px; right: 20px; }
+    .chat-toggle { bottom: 85px; right: 20px; }
 }
 
 .lightbox-overlay {
