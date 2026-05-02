@@ -272,7 +272,20 @@ nav.sticky {
 }
 
 .hero-btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     animation: fadeInUp 1.4s ease;
+}
+
+.hero .btn-outline {
+    border-color: white;
+    color: white;
+}
+
+.hero .btn-outline:hover {
+    background-color: white;
+    color: var(--text-dark);
 }
 
 .section-title {
@@ -725,6 +738,17 @@ footer {
 
     .hero p {
         font-size: 16px;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .hero .btn {
+        width: 100%;
+        max-width: 300px;
     }
 
     .filter-btns {
